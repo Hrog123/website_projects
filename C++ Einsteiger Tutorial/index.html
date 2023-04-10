@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <nav id="navbar">
+    <header>C++</header>
+    <a class="nav-link" href="#Allgemein">Allgemein</a>
+    <a class="nav-link" href="#Vorwissen">Vorwissen</a>
+    <a class="nav-link" href="#Einführung">Einführung</a>
+    <a class="nav-link" href="#Ein_erstes_Programm">Ein erstes Programm</a>
+    <a class="nav-link" href="#Erläuterung">Erläuterung</a>
+    <a class="nav-link" href="#Zusammenfassung">Zusammenfassung</a>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Allgemein">
+      <header>Allgemein</header>
+      <p>C++ ist eine der bekanntesten Programmiersprachen. Besonders verbreitet ist die Sprache in der Spieleentwicklung und gehört daher für jeden angehenden Spieleentwickler zum Standardportfolio.</p>
+      <p>C++ ist eine objekt-orientierte Programmiersprache. Dadurch entstehen bei korrekter Anwedung saubere Programme, welche effizient arbeiten können. Das letzte größere Update gabe es im Jahre 2020.</p>
+    </section>
+    <section class="main-section" id="Vorwissen">
+      <header>Vorwissen</header>
+      <p>Dieses Tutorial richtet sich an Einsteiger. Es ist nur wenig Vorwissen von Nöten:</p>
+      <ul>
+        <li>Man muss einen Computer im Allgemeinen bedienen können (Ordner öffnen, erstellen, etc.).</li>
+        <li>Man sollte Grundkenntnisse der englischen Sprache besitzen, dieses Tutorial ist zwar auf deutsch gehalten, (fast) alle Begriffe in den Programmen entstammen allerdings der englischen Sprache, es macht den Einstieg erheblich leichter, diese zu verstehen.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Einführung">
+      <header>Einführung</header>
+      <p>Um zu beginnen, werden zunächst zwei Dinge benötigt:</p>
+      <ul>
+        <li>Ein Texteditor, ich empfehle <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+        <li>Ein Compiler (Übersetzer), ein Beispiel ist der GCC.</li>
+      </ul>
+      <p>Es macht an dieser Stelle mehr Sinn direkt eine Kombination beider Systeme, eine integriete Entwicklungsumgebung (IDE) zu vewenden. ich empfehle <a href="https://visualstudio.microsoft.com/de/vs/features/cplusplus/">Visual Studio</a>.</p>
+    </section>
+    <section class="main-section" id="Ein_erstes_Programm">
+      <header>Ein erstes Programm</header>
+      <p>Nun wollen wir auch schon direkt unser erstes, kleines Programm schreiben. Dabei gehen wir den klassischen Weg, und beginnen mit einem Programm, dass uns "Hallo Welt!" ausgibt.</p>
+      <code>
+        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Hallo, Welt!";
+    return 0;
+}
+</pre>
+      </code>
+      <p>Dies speichern wir nun, und compielieren den Code. Als Ausgabe erhalten wir:</p>
+      <code>Hallo, Welt!</code>
+      <p>Herzlichen Glückwunsch, wenn das bei dir genauso aussieht, denn dann hast du gerade dein ersten von hoffentlich vielen Programmen in C++ geschrieben! Und wenn nicht, ist das auch kein Problem, schau nach, ob du vielleicht einen Schreibfehler oder eine Klammer vergessen hast. Du kannst auch gerne den hier vorhandenen Code kopieren und dann direkt mit deinem vergleichen.</p>
+    </section>
+    <section class="main-section" id="Erläuterung">
+      <header>Erläuterung</header>
+      <p>Dann wollen, wir uns mal anschauen, warum das passiert ist, was passiert ist:</p>
+    <ul>
+      <li><code>#include &lt;iostream&gt;</code> inkludiert ein "Header File", in diesem sind die Funktionen beschrieben, welche das Programm aufrufen möchte.</li>
+      <li><code>using namespace std</code> erlaubt es uns die Standard-Funktionen zu nutzen, ohne dies später nochmals extra kennzeichnen zu müssen.</li>
+      <li><code></code>Eine freie Zeile, diese ist dem Programm egal, macht es aber für Menschen besser lesbar.</li>
+      <li><code>int main () {</code> beschreibt eine Funktion, genauer gesagt die Haupt(main)funktion. Der Code in den geschwungenen Klammern wird hierbei aufgerufen ({}).</li>
+      <li><code>cout << "Hallo, Welt!";</code> sorgt für die Ausgabe von "Hallo, Welt", ohne das vorherige <code>using namespace std;</code> müsste es <code>std::cout << "Hallo, Welt";</code> lauten.</li>
+      <li><code>return 0;</code> beendet dann die Hauptfunktion, und damit auch das Programm.</li>
+      <li><code>}</code> beendet dann auch formal die Hauptfunktion und darf nicht vergessen werden.</li>    
+    </section>
+    <section class="main-section" id="Zusammenfassung">
+      <header>Zusammenfassung</header>
+      <p>Damit hast du nun dein erstes eigenes Programm geschrieben, und (hoffentlich) auch in Ansätzen nachvollziehen können, weshalb es so zu schreiben war, wie du es geschrieben hast. Doch das kann natürlich nur der Anfang gewesen sein, es gibt noch vieles zu entdecken. C++ ist ein sehr großes Feld, dass sich auch mit vielen Jahren Erfahrung nicht immer vollständig überblicken lässt. Lass dich daher nicht von Rückschlägen demotivieren, denn nur Fehler lernt man.</p>
+      <p>In diesem Sinne hoffe ich, dass du nun einen Einstieg in die Programmiersprache C++ gefunden hast und ich dein Interesse daran wecken konnte.</p>
+    </section>
+  </main>
+</body>
+
+
+</html>

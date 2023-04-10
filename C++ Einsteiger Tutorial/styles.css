@@ -1,0 +1,124 @@
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navbar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    border-right: solid;
+    border-color: #dddddd;
+    padding: 0;
+    margin: 0;
+    background-color: #e2d3e5;
+  }
+  
+  #navbar header {
+    font-family: impact, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fa1201;
+  }
+  
+  #navbar a {
+    display: block;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #1a1a23;
+    padding: 2px 5px;
+    margin: 0;
+    background-color: #e2e2f5;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  #navbar a:hover {
+    color: #555555;
+    font-size: 18px;
+  }
+  
+  main {
+    position: absolute;
+    margin-left: 203px;
+    padding: 10px 0 0 0;
+    background-color: #43e3d5;
+  }
+  
+  section {
+    border-bottom: 3px solid #dddddd;
+    padding: 10px;
+    margin: 0;
+    font-family: sans-serif;
+    color: #1e1e23;
+  }
+  
+  section header {
+    font-family: verdana;
+    font-weight: 800;
+    font-size: 20px;
+    color: #3e2231;
+  }
+  
+  section a {
+    color: #1e1e23;
+  }
+  
+  pre {
+    background-color: #1e1e23;
+    border: 3px solid #dddddd;
+    color: #1afe2d;
+    padding: 15px;
+  }
+  
+  code {
+    background-color: aqua;
+    padding: 1px;
+  }
+  
+  li {
+    padding: 2px;
+  }
+  
+  
+  section:first-of-type {
+    padding-top: 0px;
+  }
+  
+  section:last-of-type {
+    border: none;
+    padding-bottom: 0px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 1200px){
+    #navbar {
+      position: absolute;
+      max-height: 50px;
+      border:none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #navbar a, #navbar header {
+      display: inline-block;
+      text-align: center;
+      margin: auto;
+    }
+  
+    main {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 850px){
+    #navbar a {
+      display: none;
+    }
+  }
