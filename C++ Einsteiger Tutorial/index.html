@@ -46,7 +46,7 @@
     <section class="main-section" id="Ein_erstes_Programm">
       <header>Ein erstes Programm</header>
       <p>Nun wollen wir auch schon direkt unser erstes, kleines Programm schreiben. Dabei gehen wir den klassischen Weg, und beginnen mit einem Programm, dass uns "Hallo Welt!" ausgibt.</p>
-      <code>
+      <code id="free-line">
         <pre>
 #include &lt;iostream&gt;
 using namespace std;
@@ -67,8 +67,8 @@ int main() {
     <ul>
       <li><code>#include &lt;iostream&gt;</code> inkludiert ein "Header File", in diesem sind die Funktionen beschrieben, welche das Programm aufrufen möchte.</li>
       <li><code>using namespace std</code> erlaubt es uns die Standard-Funktionen zu nutzen, ohne dies später nochmals extra kennzeichnen zu müssen.</li>
-      <li><code></code>Eine freie Zeile, diese ist dem Programm egal, macht es aber für Menschen besser lesbar.</li>
-      <li><code>int main () {</code> beschreibt eine Funktion, genauer gesagt die Haupt(main)funktion. Der Code in den geschwungenen Klammern wird hierbei aufgerufen ({}).</li>
+      <li><code id="free-line"></code>Eine freie Zeile, diese ist dem Programm egal, macht es aber für Menschen besser lesbar.</li>
+      <li><code>int main () {</code> beschreibt eine Funktion, genauer gesagt die Haupt(main)funktion. Der Code in den geschwungenen Klammern wird hierbei aufgerufen <code>{}</code>.</li>
       <li><code>cout << "Hallo, Welt!";</code> sorgt für die Ausgabe von "Hallo, Welt", ohne das vorherige <code>using namespace std;</code> müsste es <code>std::cout << "Hallo, Welt";</code> lauten.</li>
       <li><code>return 0;</code> beendet dann die Hauptfunktion, und damit auch das Programm.</li>
       <li><code>}</code> beendet dann auch formal die Hauptfunktion und darf nicht vergessen werden.</li>    

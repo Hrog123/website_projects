@@ -2,6 +2,7 @@ html, body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: #ffb5b5;
   }
   
   #navbar {
@@ -10,17 +11,18 @@ html, body {
     top: 0;
     height: 100%;
     border-right: solid;
-    border-color: #dddddd;
+    border-color: #407088;
     padding: 0;
     margin: 0;
-    background-color: #e2d3e5;
+    background-color: #132743;
   }
   
   #navbar header {
     font-family: impact, sans-serif;
     font-size: 40px;
     font-weight: 800;
-    color: #fa1201;
+    color: #ffcbcb;
+    padding: 0 5px;
   }
   
   #navbar a {
@@ -29,26 +31,26 @@ html, body {
     text-decoration: none;
     color: #1a1a23;
     padding: 2px 5px;
-    margin: 0;
-    background-color: #e2e2f5;
+    margin: 3px;
+    background-color: #ffb5b5;
     font-weight: 700;
     font-size: 16px;
+    border-radius: 5px;
   }
   
   #navbar a:hover {
-    color: #555555;
-    font-size: 18px;
+    background-color: #ffcbcb;
   }
   
   main {
     position: absolute;
     margin-left: 203px;
     padding: 10px 0 0 0;
-    background-color: #43e3d5;
+    background-color: #ffb5b5;
   }
   
   section {
-    border-bottom: 3px solid #dddddd;
+    border-bottom: 3px solid #407088;
     padding: 10px;
     margin: 0;
     font-family: sans-serif;
@@ -68,18 +70,26 @@ html, body {
   
   pre {
     background-color: #1e1e23;
-    border: 3px solid #dddddd;
+    border: 3px solid #407088;
     color: #1afe2d;
     padding: 15px;
+    max-width: 200px;
   }
   
   code {
-    background-color: aqua;
-    padding: 1px;
+    background-color: #132743;
+    color: #ffcbcb;
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+  
+  #free-line {
+    padding: 0;
   }
   
   li {
-    padding: 2px;
+    padding: 1px;
+    line-height: 135%;
   }
   
   
